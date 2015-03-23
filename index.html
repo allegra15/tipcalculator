@@ -21,13 +21,13 @@
 	  	<span>Choose Tip Percentage:</span>
 	  	<div class="tip-vals">
 		  <span class="val">
-		  	<input type="radio" class="tip-btn" value=".15"> 15%
+		  	<input name="tipbtn" type="radio" class="tip-btn" value=".15"> 15%
 		  </span>
 		  <span class="val">
-		  	<input type="radio" class="tip-btn" value=".2"> 20%
+		  	<input name="tipbtn" type="radio" class="tip-btn" value=".2"> 20%
 		  </span>
 		  <span class="val">
-		  	<input type="radio" class="tip-btn" value=".25"> 25%
+		  	<input name="tipbtn" type="radio" class="tip-btn" value=".25"> 25%
 		  </span>
 		</div>
 	  </section>
@@ -40,6 +40,10 @@
 	  	<h3>Tip to leave = 
 		  <span id="tipamount" class="tip-amount">$0.00</span>
 		</h3> 
+	  </section>
+
+	  <section id="calc-reset">
+	  	<button id="reset" onclick="resetCalc()">Calculate another tip</button>
 	  </section>
                                           
 	</div>
